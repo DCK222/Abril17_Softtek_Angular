@@ -1,0 +1,8 @@
+<div id="ProductosContenedor">
+    <h2>Lista de nuestros productos</h2>
+    @for(producto of productos; track $index){
+        <ul  (click)="anadirProductosCesta(producto)">{{producto}}</ul>
+    }
+
+</div>
+

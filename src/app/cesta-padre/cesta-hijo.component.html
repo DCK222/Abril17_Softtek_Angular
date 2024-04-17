@@ -1,0 +1,13 @@
+
+<div id="ProductosContenedor">
+    <h2>Productos de la cesta : </h2>
+
+    @for(producto of carrito; track $index){
+        <ul>{{producto}}</ul>
+    }
+
+</div>
+<app-producto-padre (emiter)="anadirProducto($event)"></app-producto-padre> 
+
+
+

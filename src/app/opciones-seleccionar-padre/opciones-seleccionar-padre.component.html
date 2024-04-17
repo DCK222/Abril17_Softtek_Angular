@@ -1,0 +1,16 @@
+
+<h2>Asignaturas Elegidas : </h2>
+<ul>
+    @for(seleccionada  of opcionesElegidas; track $index){
+        <ul>
+            <li>{{seleccionada}}</li>
+        </ul>
+    }
+    
+</ul>
+
+
+
+<app-seleccionar-hijo [opciones]="opcionesLenguajes" (emiter)="anadirSeleccionar($event)"></app-seleccionar-hijo>
+
+

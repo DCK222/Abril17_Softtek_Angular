@@ -1,0 +1,11 @@
+<div id="asignaturas">
+    <h2>Asignaturas</h2>
+    <select #selectLenguajes name="" id="">
+    @for(lenguajes of opciones; track $index){
+
+    <option [value]="lenguajes">{{lenguajes}}</option>
+
+    }
+    </select>
+    <button (click)="anadirSeleccionar(selectLenguajes.value)">Seleccionar</button>
+</div>
