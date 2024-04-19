@@ -1,0 +1,7 @@
+#contehijo{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 2%;
+}

@@ -1,0 +1,16 @@
+<h3>Componente Padre</h3>
+<ul>
+    @for (persona of listaPersonas; track $index) {
+        <li>{{ persona.nombre }} - {{ persona.edad }}</li>
+    }
+</ul>
+<div id="contebotones">
+<app-hijo (emisor)="validarPersona($event)"></app-hijo>
+
+<button (click)="borrarUltimaPersona()">Borrar última persona</button>
+
+<button (click)="filtrarMayorDeEdad()">Filtrar edad +18</button>
+
+<button (click)="calcularDobleEdad()">Calcular doble edad</button>
+</div>
+
